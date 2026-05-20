@@ -1,0 +1,90 @@
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  .theme {
+    --font-heading: var(--font-sans);
+    --font-sans: var(--font-sans);
+  }
+  :root {
+    /* Using Dark Premium scheme as default */
+    --background: #0D0D0D;
+    --foreground: #FFFFFF;
+
+    --card: #1A1A2E;
+    --card-foreground: #FFFFFF;
+
+    --popover: #1A1A2E;
+    --popover-foreground: #FFFFFF;
+
+    --primary: #E94560;
+    --primary-foreground: #FFFFFF;
+
+    --secondary: #1A1A2E;
+    --secondary-foreground: #FFFFFF;
+
+    --muted: #1A1A2E;
+    --muted-foreground: #A0A0B0;
+
+    --accent: #1A1A2E;
+    --accent-foreground: #FFFFFF;
+
+    --destructive: #E94560;
+    --destructive-foreground: #FFFFFF;
+
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: #E94560;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: #0D0D0D;
+    --foreground: #FFFFFF;
+
+    --card: #1A1A2E;
+    --card-foreground: #FFFFFF;
+
+    --popover: #1A1A2E;
+    --popover-foreground: #FFFFFF;
+
+    --primary: #E94560;
+    --primary-foreground: #FFFFFF;
+
+    --secondary: #1A1A2E;
+    --secondary-foreground: #FFFFFF;
+
+    --muted: #1A1A2E;
+    --muted-foreground: #A0A0B0;
+
+    --accent: #1A1A2E;
+    --accent-foreground: #FFFFFF;
+
+    --destructive: #E94560;
+    --destructive-foreground: #FFFFFF;
+
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: #E94560;
+  }
+
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    @apply font-sans;
+  }
+}
